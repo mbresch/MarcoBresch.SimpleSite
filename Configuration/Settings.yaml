@@ -1,0 +1,13 @@
+TYPO3:
+  TYPO3CR:
+    contentDimensions:
+      'language':
+        label: 'Language'
+        icon: 'icon-language'
+        default: 'de'
+        defaultPreset: 'de'
+        presets:
+          'de':
+            label: 'Deutsch'
+            values: ['de']
+            uriSegment: 'de'

@@ -3,8 +3,14 @@
 {namespace ts=TYPO3\TypoScript\ViewHelpers}
 <html>
 <head>
+	<f:section name="metadata">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</f:section>
 	<f:section name="stylesheets">
-		<!-- Put your stylesheet inclusions here, they will be included in your website by TypoScript -->
+		<link rel="stylesheet" href="{f:uri.resource(path: '3.1/css/bootstrap.min.css', package: 'TYPO3.Twitter.Bootstrap')}" media="all" />
+		<link rel="stylesheet" href="{f:uri.resource(path: '3.1/css/bootstrap-theme.min.css', package: 'TYPO3.Twitter.Bootstrap')}" media="all" />
+		<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/SimpleSite.css', package: 'MarcoBresch.Neos12Demo')}" media="all" />
 	</f:section>
 	<f:section name="headScripts">
 		<!-- Put your scripts inclusions for the head here, they will be included in your website by TypoScript -->
@@ -12,18 +18,20 @@
 </head>
 <body>
 <f:section name="body">
-	<nav class="menu">
+	<div class="top-navigation-wrap navbar-fixed-top">
 		{parts.menu -> f:format.raw()}
-	</nav>
-	<nav class="breadcrumb">
+	</div>
+
+	<div class="container">
 		{parts.breadcrumb -> f:format.raw()}
-	</nav>
-	<div class="content">
 		{content.main -> f:format.raw()}
 	</div>
 </f:section>
 <f:section name="bodyScripts">
-	<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by TypoScript -->
+	<script src="{f:uri.resource(path: 'Libraries/jQuery/jquery-2.0.2.min.js', package: 'TYPO3.Twitter.Bootstrap')}"></script>
+	<script src="{f:uri.resource(path: '3.1/js/bootstrap.min.js', package: 'TYPO3.Twitter.Bootstrap')}"></script>
+	<script src="{f:uri.resource(path: 'JavaScript/scrollstart.js', package: 'TYPO3.NeosDemoTypo3Org')}"></script>
+	<script src="{f:uri.resource(path: 'JavaScript/main.js', package: 'TYPO3.NeosDemoTypo3Org')}"></script>
 </f:section>
 </body>
 </html>

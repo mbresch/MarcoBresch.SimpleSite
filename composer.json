@@ -1,1 +1,14 @@
-{"name":"marcobresch\/simplesite","type":"typo3-flow-site","description":"Add description here","require":{"typo3\/neos":"*","typo3\/neos-nodetypes":"*"},"autoload":{"psr-0":{"MarcoBresch\\SimpleSite":"Classes"}}}
+{
+  "name": "marcobresch\/simplesite",
+  "type": "typo3-flow-site",
+  "description": "Add description here",
+  "require": {
+    "typo3\/neos": "*",
+    "typo3\/neos-nodetypes": "*"
+  },
+  "autoload": {
+    "psr-0": {
+      "MarcoBresch\\SimpleSite": "Classes"
+    }
+  }
+}
