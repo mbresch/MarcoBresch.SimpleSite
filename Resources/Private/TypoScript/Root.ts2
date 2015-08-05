@@ -4,7 +4,7 @@
 page = Page {
 	head {
 		metadata = TYPO3.TypoScript:Template {
-			templatePath = 'resource://MarcoBresch.Neos12Demo/Private/Templates/Page/Default.html'
+			templatePath = 'resource://MarcoBresch.SimpleSite/Private/Templates/Page/Default.html'
 			sectionName = 'metadata'
 		}
 
