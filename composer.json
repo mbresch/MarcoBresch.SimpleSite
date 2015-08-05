@@ -2,16 +2,9 @@
   "name": "marcobresch\/simplesite",
   "type": "typo3-flow-site",
   "description": "Add description here",
-  "repositories":[
-    {
-      "type": "git",
-      "url": "https://github.com/Weissheiten/Weissheiten.Neos.Bootstrap.git"
-    }
-  ],
   "require": {
     "typo3\/neos": "*",
-    "typo3\/neos-nodetypes": "*",
-    "weissheiten/neos-bootstrap": "dev-master"
+    "typo3\/neos-nodetypes": "*"
   },
   "autoload": {
     "psr-0": {
