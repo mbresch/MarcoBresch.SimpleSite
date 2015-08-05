@@ -10,7 +10,7 @@
 	<f:section name="stylesheets">
 		<link rel="stylesheet" href="{f:uri.resource(path: '3.1/css/bootstrap.min.css', package: 'TYPO3.Twitter.Bootstrap')}" media="all" />
 		<link rel="stylesheet" href="{f:uri.resource(path: '3.1/css/bootstrap-theme.min.css', package: 'TYPO3.Twitter.Bootstrap')}" media="all" />
-		<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/SimpleSite.css', package: 'MarcoBresch.Neos12Demo')}" media="all" />
+		<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/SimpleSite.css', package: 'MarcoBresch.SimpleSite')}" media="all" />
 	</f:section>
 	<f:section name="headScripts">
 		<!-- Put your scripts inclusions for the head here, they will be included in your website by TypoScript -->
@@ -22,8 +22,15 @@
 		{parts.menu -> f:format.raw()}
 	</div>
 
+	<f:if condition="{landingPage}">
+		<div class="img-responsive main-header{f:if(condition: imageUri, then: ' image" style="background-image: url({imageUri});')}"{f:if(condition: imageTitleText, then: ' title="{imageTitleText}"')}>
+		<div class="container">
+			{content.teaser -> f:format.raw()}
+		</div>
+		</div>
+	</f:if>
+
 	<div class="container">
-		{parts.breadcrumb -> f:format.raw()}
 		{content.main -> f:format.raw()}
 	</div>
 </f:section>
