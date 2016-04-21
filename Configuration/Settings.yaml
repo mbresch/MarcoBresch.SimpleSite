@@ -10,4 +10,4 @@ TYPO3:
           'de':
             label: 'Deutsch'
             values: ['de']
-            uriSegment: 'de'
+            uriSegment: ''
