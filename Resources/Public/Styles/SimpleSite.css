@@ -18,3 +18,5 @@
 
 .main-header.image + .container { margin-top: calc(100vh); }
 
+figure.typo3-neos-alignment-right { text-align: right; float: right; padding-leftgit : 1em}
+figure.typo3-neos-alignment-left { text-align: left; float: left; padding-right: 1em}
